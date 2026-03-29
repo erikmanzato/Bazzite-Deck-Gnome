@@ -50,8 +50,7 @@ RUN dnf5 remove -y \
     webapp-manager \
     && dnf5 autoremove -y
 
-RUN rm -f /usr/share/applications/waydroid-restart-container.desktop
-
+RUN rm -f /usr/share/applications/waydroid-container-restart.desktop
 ##################
 #REMOVE EXTENSIONS
 ##################
