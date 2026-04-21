@@ -54,16 +54,78 @@ RUN dnf5 remove -y \
 RUN rm -f /usr/share/applications/*waydroid*.desktop
 
 ##################
-#REMOVE EXTENSIONS
+   #EXTENSIONS
 ##################
 
 RUN rm -rf /usr/share/gnome-shell/extensions/*
 
+RUN mkdir -p /etc/dconf/db/local.d && \
+    echo "[org/gnome/shell]" > /etc/dconf/db/local.d/extensions && \
+    echo "enabled-extensions=[" >> /etc/dconf/db/local.d/extensions && \
+    echo "'Vitals@CoreCoding.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'gjsosk@vishram1123.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'AlphabeticalAppGrid@stuarthayhurst'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'appindicatorsupport@rgcjonas.gmail.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'add-to-steam@pupper.space'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'user-theme@gnome-shell-extensions.gcampax.github.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'blur-my-shell@aunetx'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'auto-power-profile@dmy3k.github.io'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'lockkeys@vaina.lt'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'dash-to-dock@micxgx.gmail.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'IP-Finder@linxgem33.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'auto-theme-switcher@amritashan.github.io'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'Bluetooth-Battery-Meter@maniacx.github.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'app-grid-tuner@m-lab'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'caffeine@patapon.info'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'ding@rastersoft.com'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'restartto@tiagoporsch.github.io'," >> /etc/dconf/db/local.d/extensions && \
+    echo "'app-hider@lynith.dev']" >> /etc/dconf/db/local.d/extensions && \
+    dconf update
+
 ##################
- #REMOVE FLATPAK
+    #FLATPAK
 ##################
 
 RUN flatpak uninstall -y --all || true
+
+RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+RUN flatpak install -y flathub \
+com.github.derrod.legendary \
+com.github.tchx84.Flatseal \
+com.mattjakeman.ExtensionManager \
+com.protonvpn.www \
+com.rtosta.zapzap \
+com.spotify.Client \
+io.github.pwr_solaar.solaar \
+io.github.vikdevelop.SaveDesktop \
+io.gitlab.news_flash.NewsFlash \
+it.mijorus.gearlever \
+me.proton.Mail \
+net.nokyan.Resources \
+net.retrodeck.retrodeck \
+org.gnome.Calculator \
+org.gnome.Calendar \
+org.gnome.FileRoller \
+org.gnome.Firmware \
+org.gnome.Geary \
+org.gnome.Loupe \
+org.gnome.NautilusPreviewer \
+org.gnome.NetworkDisplays \
+org.gnome.Papers \
+org.gnome.Showtime \
+org.gnome.TextEditor \
+org.gnome.Weather \
+org.gnome.baobab \
+org.gnome.clocks \
+org.gnome.seahorse.Application \
+org.jellyfin.JellyfinDesktop \
+org.libreoffice.LibreOffice \
+org.localsend.localsend_app \
+org.mozilla.firefox \
+org.telegram.desktop \
+page.tesk.Refine \
+rocks.shy.VacuumTube \
+ru.linux_gaming.PortProton
 
 ### LINTING
 ## Verify final image and contents are correct.
