@@ -1,5 +1,12 @@
+# rebase to this repository
 sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
+
+# update system
 ujust update
-ujust toggle-bt-mic
-ujust toggle-cec-sleep
+
+# TPM unlock
 ujust setup-luks-tpm-unlock
+
+# flatpak
+
+# gnome extenssions
