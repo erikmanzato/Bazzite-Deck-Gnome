@@ -1,3 +1,6 @@
+# Steam Deck Secure Boot (Deck SB)
+https://github.com/downthecrop/DeckSecureBoot
+
 # rebase to this repository
 sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
 
