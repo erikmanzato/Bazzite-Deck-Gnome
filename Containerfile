@@ -50,7 +50,7 @@ RUN dnf5 remove -y \
     waydroid \
     webapp-manager \
     && dnf5 autoremove -y
-
+RUN rm -rf /usr/share/ublue-os/homebrew || true
 RUN rm -f /usr/share/applications/*waydroid*.desktop
 RUN rm -f /usr/share/applications/discourse.desktop
 
@@ -64,7 +64,7 @@ RUN rm -rf /usr/share/gnome-shell/extensions/*
     #FLATPAK
 ##################
 
-RUN flatpak remove -y --all || true
+RUN flatpak uninstall -y --all || true
 
 ### LINTING
 ## Verify final image and contents are correct.
