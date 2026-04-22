@@ -52,6 +52,7 @@ RUN dnf5 remove -y \
     && dnf5 autoremove -y
 
 RUN rm -f /usr/share/applications/*waydroid*.desktop
+RUN rm -f /usr/share/applications/discourse.desktop
 
 ##################
    #EXTENSIONS
