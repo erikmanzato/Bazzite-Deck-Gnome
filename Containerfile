@@ -65,44 +65,6 @@ RUN rm -rf /usr/share/gnome-shell/extensions/*
 
 RUN flatpak uninstall -y --all || true
 
-RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-RUN flatpak install -y flathub \
-com.github.tchx84.Flatseal \
-com.mattjakeman.ExtensionManager \
-com.protonvpn.www \
-com.rtosta.zapzap \
-com.spotify.Client \
-io.github.pwr_solaar.solaar \
-io.github.vikdevelop.SaveDesktop \
-io.gitlab.news_flash.NewsFlash \
-it.mijorus.gearlever \
-me.proton.Mail \
-net.nokyan.Resources \
-net.retrodeck.retrodeck \
-org.gnome.Calculator \
-org.gnome.Calendar \
-org.gnome.FileRoller \
-org.gnome.Firmware \
-org.gnome.Geary \
-org.gnome.Loupe \
-org.gnome.NautilusPreviewer \
-org.gnome.NetworkDisplays \
-org.gnome.Papers \
-org.gnome.Showtime \
-org.gnome.TextEditor \
-org.gnome.Weather \
-org.gnome.baobab \
-org.gnome.clocks \
-org.gnome.seahorse.Application \
-org.jellyfin.JellyfinDesktop \
-org.libreoffice.LibreOffice \
-org.localsend.localsend_app \
-org.mozilla.firefox \
-org.telegram.desktop \
-page.tesk.Refine \
-rocks.shy.VacuumTube \
-ru.linux_gaming.PortProton
-
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
