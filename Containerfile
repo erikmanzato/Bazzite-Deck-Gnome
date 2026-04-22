@@ -50,6 +50,7 @@ RUN dnf5 remove -y \
     waydroid \
     webapp-manager \
     && dnf5 autoremove -y
+RUN rm -rf /usr/share/ublue-os/flatpaks
 RUN rm -rf /usr/share/ublue-os/homebrew || true
 RUN rm -f /usr/share/applications/*waydroid*.desktop
 RUN rm -f /usr/share/applications/discourse.desktop
