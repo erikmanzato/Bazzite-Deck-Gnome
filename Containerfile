@@ -59,29 +59,6 @@ RUN rm -f /usr/share/applications/*waydroid*.desktop
 
 RUN rm -rf /usr/share/gnome-shell/extensions/*
 
-RUN mkdir -p /etc/dconf/db/local.d && \
-    echo "[org/gnome/shell]" > /etc/dconf/db/local.d/extensions && \
-    echo "enabled-extensions=[" >> /etc/dconf/db/local.d/extensions && \
-    echo "'Vitals@CoreCoding.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'gjsosk@vishram1123.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'AlphabeticalAppGrid@stuarthayhurst'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'appindicatorsupport@rgcjonas.gmail.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'add-to-steam@pupper.space'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'user-theme@gnome-shell-extensions.gcampax.github.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'blur-my-shell@aunetx'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'auto-power-profile@dmy3k.github.io'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'lockkeys@vaina.lt'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'dash-to-dock@micxgx.gmail.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'IP-Finder@linxgem33.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'auto-theme-switcher@amritashan.github.io'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'Bluetooth-Battery-Meter@maniacx.github.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'app-grid-tuner@m-lab'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'caffeine@patapon.info'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'ding@rastersoft.com'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'restartto@tiagoporsch.github.io'," >> /etc/dconf/db/local.d/extensions && \
-    echo "'app-hider@lynith.dev']" >> /etc/dconf/db/local.d/extensions && \
-    dconf update
-
 ##################
     #FLATPAK
 ##################
