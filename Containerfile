@@ -64,7 +64,7 @@ RUN rm -rf /usr/share/gnome-shell/extensions/*
     #FLATPAK
 ##################
 
-RUN flatpak uninstall -y --all || true
+RUN flatpak remove -y --all || true
 
 ### LINTING
 ## Verify final image and contents are correct.
