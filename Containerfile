@@ -67,7 +67,6 @@ RUN flatpak uninstall -y --all || true
 
 RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 RUN flatpak install -y flathub \
-com.github.derrod.legendary \
 com.github.tchx84.Flatseal \
 com.mattjakeman.ExtensionManager \
 com.protonvpn.www \
