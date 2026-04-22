@@ -10,6 +10,12 @@ ujust update
 # TPM unlock
 ujust setup-luks-tpm-unlock
 
+# snapshot
+ujust configure-snapshots
+
+# disable automount steam
+ujust enable-steam-automount
+
 # flatpak
 
 # gnome extenssions
