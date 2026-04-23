@@ -17,7 +17,38 @@ sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
 
 ## flatpak
 
-`flatpak install -y com.github.tchx84.Flatseal com.mattjakeman.ExtensionManager com.protonvpn.www com.rtosta.zapzap com.spotify.Client io.github.pwr_solaar.solaar io.github.vikdevelop.SaveDesktop io.gitlab.news_flash.NewsFlash it.mijorus.gearlever me.proton.Mail net.nokyan.Resources net.retrodeck.retrodeck org.gnome.Calculator org.gnome.Calendar org.gnome.FileRoller org.gnome.Firmware org.gnome.Geary org.gnome.Loupe org.gnome.NautilusPreviewer org.gnome.NetworkDisplays org.gnome.Papers org.gnome.Showtime org.gnome.TextEditor org.gnome.Weather org.gnome.baobab org.gnome.clocks org.gnome.seahorse.Application org.jellyfin.JellyfinDesktop org.libreoffice.LibreOffice org.localsend.localsend_app org.mozilla.firefox org.telegram.desktop page.tesk.Refine rocks.shy.VacuumTube ru.linux_gaming.PortProton`
+flatpak install -y \
+com.github.tchx84.Flatseal \  # FlatSeal
+com.mattjakeman.ExtensionManager \
+com.protonvpn.www \
+com.rtosta.zapzap \
+com.spotify.Client \
+io.github.pwr_solaar.solaar \
+io.gitlab.news_flash.NewsFlash \
+it.mijorus.gearlever \
+me.proton.Mail \
+net.nokyan.Resources \
+net.retrodeck.retrodeck \
+org.gnome.Calculator \
+org.gnome.Calendar \
+org.gnome.FileRoller \
+org.gnome.Firmware \
+org.gnome.Geary \
+org.gnome.Loupe \
+org.gnome.NautilusPreviewer \
+org.gnome.NetworkDisplays \
+org.gnome.TextEditor \
+org.gnome.Weather \
+org.gnome.baobab \
+org.gnome.clocks \
+org.gnome.seahorse.Application \
+org.jellyfin.JellyfinDesktop \
+org.libreoffice.LibreOffice \
+org.localsend.localsend_app \
+org.mozilla.firefox \
+org.telegram.desktop \
+ru.linux_gaming.PortProton
+
 
 ## gnome extenssions
 
