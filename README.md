@@ -18,7 +18,7 @@ sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
 ## flatpak
 
 flatpak install -y \
-com.github.tchx84.Flatseal \  # FlatSeal
+com.github.tchx84.Flatseal \  [FlatSeal]
 com.mattjakeman.ExtensionManager \
 com.protonvpn.www \
 com.rtosta.zapzap \
