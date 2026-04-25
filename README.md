@@ -11,13 +11,12 @@ sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
 - **ujust toggle-password-feedback**
 - **ujust configure-grub**
 - **ujust configure-snapshots**
-- **ujust enable-steam-automount**
 - **ujust setup-decky** 
 
 
 ## flatpak
 
-flatpak install -y \
+> flatpak install -y \
 com.github.tchx84.Flatseal \
 com.mattjakeman.ExtensionManager \
 com.protonvpn.www \
