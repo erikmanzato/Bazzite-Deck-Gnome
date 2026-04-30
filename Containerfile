@@ -58,7 +58,6 @@ RUN dnf5 remove -y \
     nautilus-gsconnect \
     rom-properties-gtk4 \
     Sunshine \
-    tailscale \
     waydroid \
     webapp-manager \
     && dnf5 autoremove -y
