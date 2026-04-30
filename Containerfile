@@ -36,18 +36,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     /ctx/build.sh
 
 ##################
-   # TAILSCALE
-##################
-
-
-RUN curl -fsSL https://pkgs.tailscale.com/stable/fedora/tailscale.repo -o /etc/yum.repos.d/tailscale.repo
-
-
-RUN rpm-ostree install tailscale
-
-RUN systemctl enable tailscaled
-
-##################
    #REMOVE RPM
 ##################
 
