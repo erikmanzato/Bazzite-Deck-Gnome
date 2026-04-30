@@ -40,8 +40,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 ##################
 
 
-RUN curl -fsSL https://pkgs.tailscale.com/stable/fedora/tailscale.repo \
-    -o /etc/yum.repos.d/tailscale.repo
+RUN curl -fsSL https://pkgs.tailscale.com/stable/fedora/tailscale.repo -o /etc/yum.repos.d/tailscale.repo
 
 
 RUN rpm-ostree install tailscale
