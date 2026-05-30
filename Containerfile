@@ -44,6 +44,7 @@ RUN dnf5 remove -y \
     hhd-ui \
     lutris \
     nautilus-gsconnect \
+    protontricks \
     rom-properties-gtk4 \
     Sunshine \
     waydroid \
