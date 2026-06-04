@@ -55,8 +55,6 @@ RUN rm -rf /usr/share/ublue-os/homebrew || true
 RUN rm -f /usr/share/applications/*waydroid*.desktop
 RUN rm -f /usr/share/applications/discourse.desktop
 
-RUN steam --force-update
-
 ##################
    #EXTENSIONS
 ##################
