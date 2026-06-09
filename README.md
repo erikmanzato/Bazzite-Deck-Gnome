@@ -1,20 +1,30 @@
+## Bazzite Deck GNOME
+
+[![Build Status](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/actions/workflows/build.yml/badge.svg)](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/actions/workflows/build.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/IIMustangII1151/Bazzite-Deck-Gnome)](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/commits/main)
+
+A custom Universal Blue [Bazzite](https://github.com/ublue-os/bazzite) image optimized for Steam Deck with GNOME desktop environment.
+
 ## Steam Deck Secure Boot (Deck SB)
 https://github.com/downthecrop/DeckSecureBoot
 
-## rebase to this repository
+## Rebase to this repository
+```bash
 sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
+```
 
-## ujust
+## Available Commands (ujust)
 
-- **ujust update**
-- **ujust setup-luks-tpm-unlock**
-- **ujust toggle-password-feedback**
-- **ujust configure-grub**
-- **ujust configure-snapshots**
-- **ujust setup-decky** 
+- **ujust update** - Update the system
+- **ujust setup-luks-tpm-unlock** - Setup LUKS TPM unlock
+- **ujust toggle-password-feedback** - Toggle password feedback
+- **ujust configure-grub** - Configure GRUB bootloader
+- **ujust configure-snapshots** - Configure system snapshots
+- **ujust setup-decky** - Setup Decky Loader
 
 
-## flatpak
+## Included Flatpak Applications
 
 > flatpak install -y \
 com.github.tchx84.Flatseal \
@@ -48,8 +58,7 @@ org.mozilla.firefox \
 org.telegram.desktop \
 ru.linux_gaming.PortProton
 
-
-## gnome extenssions
+## GNOME Extensions
 
 - **Vitals@CoreCoding.com**
 - **gjsosk@vishram1123.com**
@@ -69,3 +78,7 @@ ru.linux_gaming.PortProton
 - **ding@rastersoft.com**
 - **restartto@tiagoporsch.github.io**
 - **app-hider@lynith.dev**
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
