@@ -62,7 +62,7 @@ RUN rm -f /usr/share/applications/discourse.desktop
 RUN rm -rf /usr/share/gnome-shell/extensions/*
 
 ##################
-    #FLATPAK
+     #FLATPAK
 ##################
 
 RUN flatpak uninstall -y --all || true
