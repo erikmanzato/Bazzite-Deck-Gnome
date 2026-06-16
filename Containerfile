@@ -39,7 +39,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
    #REMOVE RPM
 ##################
 
-RUN dnf5 remove -y \
+# RUN dnf5 remove -y \
     firewall-config \
     hhd-ui \
     lutris \
@@ -50,22 +50,22 @@ RUN dnf5 remove -y \
     waydroid \
     webapp-manager \
     && dnf5 autoremove -y
-RUN rm -rf /usr/share/ublue-os/flatpaks
-RUN rm -rf /usr/share/ublue-os/homebrew || true
-RUN rm -f /usr/share/applications/*waydroid*.desktop
-RUN rm -f /usr/share/applications/discourse.desktop
+# RUN rm -rf /usr/share/ublue-os/flatpaks
+# RUN rm -rf /usr/share/ublue-os/homebrew || true
+# RUN rm -f /usr/share/applications/*waydroid*.desktop
+# RUN rm -f /usr/share/applications/discourse.desktop
 
 ##################
    #EXTENSIONS
 ##################
 
-RUN rm -rf /usr/share/gnome-shell/extensions/*
+# RUN rm -rf /usr/share/gnome-shell/extensions/*
 
 ##################
      #FLATPAK
 ##################
 
-RUN flatpak uninstall -y --all || true
+# RUN flatpak uninstall -y --all || true
 
 ### LINTING
 ## Verify final image and contents are correct.
