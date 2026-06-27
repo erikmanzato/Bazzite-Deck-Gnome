@@ -1,8 +1,8 @@
 ## Bazzite Deck GNOME
 
-[![Build Status](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/actions/workflows/build.yml/badge.svg)](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/actions/workflows/build.yml)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/blob/main/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/IIMustangII1151/Bazzite-Deck-Gnome)](https://github.com/IIMustangII1151/Bazzite-Deck-Gnome/commits/main)
+[![Build Status](https://github.com/erikmanzato/Bazzite-Deck-Gnome/actions/workflows/build.yml/badge.svg)](https://github.com/erikmanzato/Bazzite-Deck-Gnome/actions/workflows/build.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/erikmanzato/Bazzite-Deck-Gnome/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/erikmanzato/Bazzite-Deck-Gnome)](https://github.com/erikmanzato/Bazzite-Deck-Gnome/commits/main)
 
 A custom Universal Blue [Bazzite](https://github.com/ublue-os/bazzite) image optimized for Steam Deck with GNOME desktop environment.
 
@@ -11,7 +11,7 @@ https://github.com/downthecrop/DeckSecureBoot
 
 ## Rebase to this repository
 ```bash
-sudo bootc switch ghcr.io/iimustangii1151/bazzite-deck-gnome:latest
+sudo bootc switch ghcr.io/erikmanzato/bazzite-deck-gnome:latest
 ```
 
 ## Available Commands (ujust)
